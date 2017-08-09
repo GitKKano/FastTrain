@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var trainName: UITextField!
+    @IBOutlet weak var Traffic: UISegmentedControl!
+    @IBOutlet weak var PlaceInTrain: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +22,38 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
+    @IBAction func submitNewRecord(_ sender: Any) {
+        
+                //Sets Place in train
+        var Traffic = 0
+        
+        switch self.PlaceInTrain.selectedSegmentIndex {
+        case 0:
+            Traffic = 0
+        case 1:
+            Traffic = 1
+        default:
+            break
+        }
+        
+                var placaInTrainINT = 0
+        
+                    switch self.PlaceInTrain.selectedSegmentIndex {
+                    case 0:
+                        placaInTrainINT = 0
+                    case 1:
+                        placaInTrainINT = 1
+                    case 2:
+                        placaInTrainINT = 2
+                    default:
+                        break
+                    }
+                print(trainName.text ?? "Toukaido Line", Traffic, placaInTrainINT)
+
+        
+    }
 
 }
 
