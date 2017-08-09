@@ -15,6 +15,8 @@
 		3CE8C6DE1F3B3BC9003BFFBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE8C6DC1F3B3BC9003BFFBD /* LaunchScreen.storyboard */; };
 		3CE8C6E91F3B3BC9003BFFBD /* FastTrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8C6E81F3B3BC9003BFFBD /* FastTrainTests.swift */; };
 		3CE8C6F41F3B3BC9003BFFBD /* FastTrainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8C6F31F3B3BC9003BFFBD /* FastTrainUITests.swift */; };
+		3CE8C7041F3B4595003BFFBD /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8C7021F3B4595003BFFBD /* Data.xcdatamodeld */; };
+		3CE8C7061F3B45D0003BFFBD /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8C7051F3B45D0003BFFBD /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3CE8C6EF1F3B3BC9003BFFBD /* FastTrainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastTrainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE8C6F31F3B3BC9003BFFBD /* FastTrainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTrainUITests.swift; sourceTree = "<group>"; };
 		3CE8C6F51F3B3BC9003BFFBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CE8C7031F3B4595003BFFBD /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
+		3CE8C7051F3B45D0003BFFBD /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		3CE8C6C41F3B3BC9003BFFBD = {
 			isa = PBXGroup;
 			children = (
+				3CE8C7011F3B4573003BFFBD /* Helpers */,
 				3CE8C6CF1F3B3BC9003BFFBD /* FastTrain */,
 				3CE8C6E71F3B3BC9003BFFBD /* FastTrainTests */,
 				3CE8C6F21F3B3BC9003BFFBD /* FastTrainUITests */,
@@ -126,6 +131,15 @@
 				3CE8C6F51F3B3BC9003BFFBD /* Info.plist */,
 			);
 			path = FastTrainUITests;
+			sourceTree = "<group>";
+		};
+		3CE8C7011F3B4573003BFFBD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8C7051F3B45D0003BFFBD /* Data.swift */,
+				3CE8C7021F3B4595003BFFBD /* Data.xcdatamodeld */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CE8C6D91F3B3BC9003BFFBD /* FastTrain.xcdatamodeld in Sources */,
+				3CE8C7061F3B45D0003BFFBD /* Data.swift in Sources */,
 				3CE8C6D31F3B3BC9003BFFBD /* ViewController.swift in Sources */,
 				3CE8C6D11F3B3BC9003BFFBD /* AppDelegate.swift in Sources */,
+				3CE8C7041F3B4595003BFFBD /* Data.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +563,16 @@
 			);
 			currentVersion = 3CE8C6D81F3B3BC9003BFFBD /* FastTrain.xcdatamodel */;
 			path = FastTrain.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		3CE8C7021F3B4595003BFFBD /* Data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3CE8C7031F3B4595003BFFBD /* Data.xcdatamodel */,
+			);
+			currentVersion = 3CE8C7031F3B4595003BFFBD /* Data.xcdatamodel */;
+			path = Data.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

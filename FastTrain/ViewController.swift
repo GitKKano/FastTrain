@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var trainName: UITextField!
-    @IBOutlet weak var Traffic: UISegmentedControl!
-    @IBOutlet weak var PlaceInTrain: UISegmentedControl!
+    @IBOutlet weak var traffic: UISegmentedControl!
+    @IBOutlet weak var placeInTrain: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
                 //Sets Place in train
         var Traffic = 0
         
-        switch self.PlaceInTrain.selectedSegmentIndex {
+        switch self.placeInTrain.selectedSegmentIndex {
         case 0:
             Traffic = 0
         case 1:
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         
                 var placaInTrainINT = 0
         
-                    switch self.PlaceInTrain.selectedSegmentIndex {
+                    switch self.placeInTrain.selectedSegmentIndex {
                     case 0:
                         placaInTrainINT = 0
                     case 1:
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
                         break
                     }
                 print(trainName.text ?? "Toukaido Line", Traffic, placaInTrainINT)
-
+        
         
     }
 
