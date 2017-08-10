@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Train Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wzP-DD-IxN">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Train Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wzP-DD-IxN">
                                 <rect key="frame" x="16" y="46" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -42,7 +42,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <action selector="submitNewRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o0y-K6-9aG"/>
+                                    <action selector="submitNewRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zho-3j-9sg"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XXD-Gc-hxa">
@@ -59,6 +59,8 @@
                     <connections>
                         <outlet property="PlaceInTrain" destination="2CM-Wa-oT0" id="7S3-Rv-NUq"/>
                         <outlet property="Traffic" destination="XXD-Gc-hxa" id="ynV-Ip-aHo"/>
+                        <outlet property="placeInTrain" destination="2CM-Wa-oT0" id="w7U-hZ-RJF"/>
+                        <outlet property="traffic" destination="XXD-Gc-hxa" id="drO-Td-ed9"/>
                         <outlet property="trainName" destination="wzP-DD-IxN" id="OF2-6f-cSe"/>
                     </connections>
                 </viewController>
